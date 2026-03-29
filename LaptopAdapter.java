@@ -1,13 +1,13 @@
-public class LaptopAdapter implements PowerOutlet {
-    private Laptop laptop;
+public class RefrigeratorAdapter implements PowerOutlet {
+    private Refrigerator refrigerator;
 
-    public LaptopAdapter(Laptop laptop) {
-        this.laptop = laptop;
+    public RefrigeratorAdapter(Refrigerator refrigerator) {
+        this.refrigerator = refrigerator;
     }
 
     @Override
     public void plugIn() {
-        laptop.charge();
+        refrigerator.startCooling();
     }
     
 }
